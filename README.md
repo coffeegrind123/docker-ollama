@@ -8,6 +8,6 @@ docker exec -it ollama wget -P /root/.ollama/models https://huggingface.co/Never
 
 docker exec -it ollama ollama create noromaid -f /root/.ollama/Modelfile
 
-docker exec -it ollama ollama run noromaid
+docker exec -it ollama ollama run noromaid --keepalive=24h
 
 #docker exec -it ollama ollama show --modelfile dolphin-mixtral:8x7b
