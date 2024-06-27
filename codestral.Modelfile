@@ -1,7 +1,7 @@
+
 # https://huggingface.co/bartowski/Codestral-22B-v0.1-GGUF
 
 FROM models/Codestral-22B-v0.1-Q6_K.gguf
-#TEMPLATE [INST] {{ if .System }}{{ .System }} {{ end }}{{ .Prompt }} [/INST] {{ .Response }}
 TEMPLATE "[INST] {{ if .System }}
 <<SYS>>{{ .System }}<</SYS>>{{ end }}
 {{ .Prompt }} [/INST] {{ .Response }}"
