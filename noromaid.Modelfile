@@ -1,3 +1,5 @@
+# https://huggingface.co/NeverSleep/Noromaid-v0.4-Mixtral-Instruct-8x7b-Zloss-GGUF
+
 FROM models/Noromaid-v0.4-Mixtral-Instruct-8x7b.q4_k_m.gguf
 #Q4_0
 #Q4_K_S -- optimal, fast, good quality
