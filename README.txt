@@ -9,3 +9,5 @@ docker exec -it ollama ollama create noromaid -f /root/.ollama/noromaid.Modelfil
 docker exec -it ollama ollama run noromaid
 
 #docker exec -it ollama ollama show --modelfile dolphin-mixtral:8x7b
+
+#docker exec -it ollama ollama list
