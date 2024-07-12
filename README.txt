@@ -1,4 +1,4 @@
-docker run -it --pull=always --rm -v 'C:\\Users\\User\\ollama:/root/.ollama' -p 11434:11434 -e OLLAMA_KEEP_ALIVE="-1" --name "ollama" --rm --gpus all ollama/ollama:latest
+docker run -it --pull=always --rm -v "C:\\Users\\User\\ollama:/root/.ollama" -p 11434:11434 -e OLLAMA_KEEP_ALIVE="-1" --name "ollama" --rm --gpus all ollama/ollama:latest
 
 docker exec -it ollama wget -P /root/.ollama https://raw.githubusercontent.com/coffeegrind123/docker-ollama/main/noromaid.Modelfile
 
