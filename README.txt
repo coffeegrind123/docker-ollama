@@ -11,3 +11,12 @@ docker exec -it ollama ollama run noromaid
 #docker exec -it ollama ollama show --modelfile dolphin-mixtral:8x7b
 
 #docker exec -it ollama ollama list
+
+
+
+
+RUN MODELS FROM ONLINE DIR
+
+docker run -it --pull=always --rm -v "C:\\Users\\User\\ollama:/root/.ollama" -p 11434:11434 -e OLLAMA_KEEP_ALIVE="-1" --name "ollama" --rm --gpus all ollama/ollama:latest
+
+docker exec -it ollama ollama run tripplyons/r1-distill-qwen-7b
